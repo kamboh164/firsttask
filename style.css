@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#frame p{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-family: cursive;
+    font-size: 25px;
+    height: 5vw;
+    padding: 0 30px;
+}
+#frame{
+    overflow: hidden;
+    height: 5vw;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+#circle{
+    pointer-events: none;
+    height: 2vw;
+    width: 2vw;
+    background: blueviolet;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 0;
+    left: 0;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .5s;
+  z-index: 1;
+}
